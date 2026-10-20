@@ -2,6 +2,8 @@
   "name": "kiss-or-slap",
   "version": "0.1.0",
   "description": "Point at a UI element and give feedback to your coding agent.",
+  "repository": { "type": "git", "url": "git+https://github.com/tree-lancer/kiss-or-slap.git" },
+  "homepage": "https://github.com/tree-lancer/kiss-or-slap",
   "type": "module",
   "license": "MIT",
   "files": ["dist", "skill"],
@@ -19,6 +21,6 @@
     "prepare": "npm run build",
     "prepack": "npm run build"
   },
-  "publishConfig": { "access": "public" },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" },
   "engines": { "node": ">=18" }
 }
