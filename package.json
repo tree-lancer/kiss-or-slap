@@ -1,0 +1,24 @@
+{
+  "name": "kiss-or-slap",
+  "version": "0.1.0",
+  "description": "Point at a UI element and give feedback to your coding agent.",
+  "type": "module",
+  "license": "MIT",
+  "files": ["dist", "skill"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./global": "./dist/kiss-or-slap.global.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "check": "node --check src/index.js && node scripts/check.js",
+    "dev": "python3 -m http.server 4173",
+    "prepare": "npm run build",
+    "prepack": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "engines": { "node": ">=18" }
+}
