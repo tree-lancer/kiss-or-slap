@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "node scripts/build.js",
+    "build:pages": "npm run build && node scripts/build-pages.js",
     "check": "node --check src/index.js && node scripts/check.js",
     "dev": "python3 -m http.server 4173",
     "prepare": "npm run build",
